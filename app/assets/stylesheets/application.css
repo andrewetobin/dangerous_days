@@ -1,0 +1,169 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require picker/default
+ *= require picker/default.date
+ *= require_self
+ */
+
+body {
+  margin: 0 auto;
+  font-family: 'Cantarell', sans-serif;
+  font-size: 17px;
+  line-height: 23px;
+  margin: 0 0 23px 0;
+}
+
+h1 {
+  font-family: 'Fjalla One', sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  line-height: 46px;
+  font-size: 43px;
+  margin: 0 0 23px 0;
+}
+
+h2 {
+  font-family: 'Cantarell', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  margin: 0 0 23px 0;
+}
+
+nav {
+  padding: 0;
+  background-color: #7CB4A0;
+  height: 220px;
+}
+
+.inner-nav {
+  width:1000px;
+  height: 90px;
+  margin: 0 auto;
+}
+
+.logo {
+  display: block;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.input {
+  font-family: inherit;
+  font-size: inherit;
+  display: block;
+  width: 100%;
+  height: 2.5rem;
+  padding: .5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+.date-search {
+  /* float:left; */
+  text-align: center;
+  margin-top: 24px;
+}
+
+.datepicker {
+  width: 200px;
+  display: inline;
+  color: #999;
+  margin-left: 10px;
+}
+
+.btn {
+  font-family: var(--button-font-family);
+  font-size: 16px;
+  font-weight: var(--button-font-weight);
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  line-height: var(--button-line-height);
+  padding: var(--button-padding-y) var(--button-padding-x);
+  margin: 0;
+  height: auto;
+  border: var(--border-width) solid transparent;
+  vertical-align: middle;
+  -webkit-appearance: none;
+  color: #FFF;
+  background-color: #BC5353;
+}
+
+.btn:hover {
+  text-decoration: none;
+}
+
+.btn:focus {
+  outline: none;
+  border-color: var(--darken-2);
+  box-shadow: 0 0 0 3px var(--darken-3);
+}
+
+::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+:root {
+  --border-width: 1px;
+  --bold-font-weight: bold;
+  --button-font-family: inherit;
+  --button-font-size: inherit;
+  --button-font-weight: var(--bold-font-weight);
+  --button-line-height: 1.125rem;
+  --button-padding-y: .5rem;
+  --button-padding-x: 1rem;
+  --darken-2: rgba(0, 0, 0, .125);
+  --darken-3: rgba(0, 0, 0, .25);
+}
+
+.btn-outline,
+.btn-outline:hover {
+  border-color: #944848;
+}
+
+.btn-outline {
+  border-radius: var(--border-radius);
+}
+
+.btn-outline:hover {
+  box-shadow: inset 0 0 0 20rem var(--darken-1);
+}
+
+.btn-outline:active {
+  box-shadow: inset 0 0 0 20rem var(--darken-2),
+  inset 0 3px 4px 0 var(--darken-3),
+  0 0 1px var(--darken-2);
+}
+
+.btn-outline:disabled,
+.btn-outline.is-disabled {
+  opacity: .5;
+}
+
+:root {
+  --border-radius: 3px;
+  --darken-1: rgba(0, 0, 0, .0625);
+  --darken-2: rgba(0, 0, 0, .125);
+  --darken-3: rgba(0, 0, 0, .25);
+}
+
+.date-search.btn {
+  background-color:#FFF;
+}
